@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.example.com/gems" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="gems" type="gems:gemsType" xmlns:gems="http://www.example.com/gems"/>
+  <xs:complexType name="visual-parametersType">
+    <xs:sequence>
+      <xs:element name="color">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="purple"/>
+            <xs:enumeration value="red"/>
+            <xs:enumeration value="green"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="transparency">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="26"/>
+            <xs:enumeration value="73"/>
+            <xs:enumeration value="47"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cut">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5"/>
+            <xs:enumeration value="14"/>
+            <xs:enumeration value="8"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="semipreciousType">
+    <xs:sequence>
+      <xs:element type="gems:visual-parametersType" name="visual-parameters" xmlns:gems="http://www.example.com/gems"/>
+      <xs:element name="value">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="5.7"/>
+            <xs:enumeration value="3.8"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="date-of-processing">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="2015-01"/>
+            <xs:enumeration value="2019-05"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+    <xs:attribute type="xs:string" name="origin" use="optional"/>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="preciousType">
+    <xs:sequence>
+      <xs:element type="gems:visual-parametersType" name="visual-parameters" xmlns:gems="http://www.example.com/gems"/>
+      <xs:element type="xs:string" name="value"/>
+      <xs:element type="xs:string" name="date-of-processing"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+    <xs:attribute type="xs:string" name="origin"/>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="gemsType">
+    <xs:sequence>
+      <xs:element type="gems:semipreciousType" name="semiprecious" maxOccurs="unbounded" minOccurs="0" xmlns:gems="http://www.example.com/gems"/>
+      <xs:element type="gems:preciousType" name="precious" xmlns:gems="http://www.example.com/gems"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.example.com/gems gems.xsd">
+
+    <semiprecious name="amethyst" origin="Germany" id="gem-1">
+        <visual-parameters>
+            <color>purple</color>
+            <transparency>26</transparency>
+            <cut>5</cut>
+        </visual-parameters>
+        <value>5.7</value>
+        <date-of-processing>2015-01</date-of-processing>
+    </semiprecious>
+
+    <semiprecious name="garnet" origin="Brazil" id="gem-2">
+        <visual-parameters>
+            <color>red</color>
+            <transparency>73</transparency>
+            <cut>14</cut>
+        </visual-parameters>
+        <value>3.8</value>
+        <date-of-processing>2019-05</date-of-processing>
+    </semiprecious>
+
+    <precious name="emerald" origin="Colombia" id="gem-3">
+        <visual-parameters>
+            <color>green</color>
+            <transparency>47</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>2.9</value>
+        <date-of-processing>2021-02</date-of-processing>
+    </precious>
+
+</gems>

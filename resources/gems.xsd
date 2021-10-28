@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<schema attributeFormDefault="unqualified"
+        elementFormDefault="qualified"
+        targetNamespace="http://www.example.com/gems">
+
+
+    <element name="gem" type="tns:GemType" abstract="true"/>
+    <element name="precious" type="tns:Precious" substitutionGroup="tns:gem"/>
+    <element name="semiprecious" type="tns:Semiprecious" substitutionGroup="tns:gem"/>
+
+    <element name="Gems">
+        <complexType>
+            <sequence>
+                <element ref="tns:gem"  maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="GemType">
+        <sequence>
+            <element name="visual-parameters" type="tns:VisualParameters"/>
+            <element name="value" type="tns:Value"/>
+            <element name="date-of-processing" type="gYearMonth"/>
+        </sequence>
+        <attribute name="origin" type="tns:Origin" />
+        <attribute name="id" type="tns:GemId" use="required"/>
+    </complexType>
+
+    <complexType name="VisualParameters">
+        <sequence>
+            <element name="color">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="Colorless"/>
+                        <enumeration value="Green"/>
+                        <enumeration value="Red"/>
+                        <enumeration value="Blue"/>
+                        <enumeration value="Purple"/>
+                        <enumeration value="Pink"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="transparency" default="100">
+                <simpleType>
+                    <restriction base="positiveInteger">
+                        <maxInclusive value="100"/>
+                        <minInclusive value="0"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="cut">
+            <simpleType>
+                <restriction base="string">
+                    <pattern value="[1-9]||[1-8][0-9]"/>
+                </restriction>
+            </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+
+    <simpleType name="Value">
+        <restriction base="string">
+            <pattern value="([0-9]+)(.([0-9]+))?"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Name">
+        <restriction base="string">
+            <pattern value="([a-zA-Z]{4,20})"/>
+        </restriction>
+    </simpleType>
+
+   <simpleType name="Transparency">
+        <restriction base="string">
+            <pattern value="[0-9]||([1-9][0-9])||[100]"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Cut">
+        <restriction base="string">
+            <pattern value="[1-9]||[1-8][0-9]"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Origin">
+        <restriction base="string">
+            <pattern value="[A-Z][a-zA-Z]{2,30}"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="GemId">
+        <restriction base="ID">
+            <pattern value="gem-\d{1,10}"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="Semiprecious">
+        <complexContent>
+            <extension base="tns:GemType">
+                <attribute name="name" type="tns:Name" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="Precious">
+        <complexContent>
+            <extension base="tns:GemType">
+                <attribute name="name" use="optional" default="diamond">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="alexandrite"></enumeration>
+                            <enumeration value="diamond"></enumeration>
+                            <enumeration value="emerald"></enumeration>
+                            <enumeration value="ruby"></enumeration>
+                            <enumeration value="sapphire"></enumeration>
+                            <enumeration value="chrysoberyl"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+</schema>
