@@ -19,12 +19,12 @@ import org.apache.logging.log4j.Logger;
 public class XmlValidator {
     static Logger logger = LogManager.getLogger();
 
-    public static boolean validateXML(String xmlFilePath) throws GemException {
+    public static boolean validateXML(String xmlFilePath,String schemaPath) throws GemException {
 
-        final String SCHEMA_PATH = "resources/gems.xsd";
+        //final String SCHEMA_PATH = "resources/gems.xsd";
         String language = XMLConstants.W3C_XML_SCHEMA_NS_URI;
         SchemaFactory factory = SchemaFactory.newInstance(language);
-        File schemaLocation = new File(SCHEMA_PATH);
+        File schemaLocation = new File(schemaPath);
 
         try {
             Schema schema = factory.newSchema(schemaLocation);

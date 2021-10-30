@@ -1,0 +1,2 @@
+2021-10-30 22:59:22 [main] [buildSetGems] [47] ERROR by.epam.task3.builder.StaxBuilder - Error in Stax: ParseError at [row,col]:[17,9]
+Message: Element type "semiprecious" must be followed by either attribute specifications, ">" or "/>".

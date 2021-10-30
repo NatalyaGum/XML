@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.example.com/gems"
+      xsi:schemaLocation="http://www.example.com/gems gems.xsd">
+
+    <semiprecious  id="gem-1" name="citrine" origin="Germany" >
+        <visual-parameters>
+            <color>purple</color>
+            <transparency>26</transparency>
+            <cut>5</cut>
+        </visual-parameters>
+        <value>5.7</value>
+        <date-of-processing>2015-01</date-of-processing>
+    </semiprecious>
+</gems>

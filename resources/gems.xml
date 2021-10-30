@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.example.com/gems"
       xsi:schemaLocation="http://www.example.com/gems gems.xsd">
 
-    <semiprecious name="amethyst" origin="Germany" id="gem-1">
+    <semiprecious  id="gem-1" name="citrine" origin="Germany" >
         <visual-parameters>
             <color>purple</color>
             <transparency>26</transparency>
@@ -12,7 +13,7 @@
         <date-of-processing>2015-01</date-of-processing>
     </semiprecious>
 
-    <semiprecious name="garnet" origin="Brazil" id="gem-2">
+    <semiprecious name="pomegranate" origin="Brazil" id="gem-2">
         <visual-parameters>
             <color>red</color>
             <transparency>73</transparency>
@@ -22,7 +23,7 @@
         <date-of-processing>2019-05</date-of-processing>
     </semiprecious>
 
-    <precious name="emerald" origin="Colombia" id="gem-3">
+    <precious  id="gem-3" name="emerald" origin="Colombia" >
         <visual-parameters>
             <color>green</color>
             <transparency>47</transparency>
@@ -32,4 +33,131 @@
         <date-of-processing>2021-02</date-of-processing>
     </precious>
 
+    <precious name="sapphire" origin="India" id="gem-4">
+        <visual-parameters>
+            <color>blue</color>
+            <transparency>27</transparency>
+            <cut>6</cut>
+        </visual-parameters>
+        <value>3.4</value>
+        <date-of-processing>2020-11</date-of-processing>
+    </precious>
+
+    <semiprecious name="chrysoprase" origin="Russia" id="gem-5">
+    <visual-parameters>
+        <color>green</color>
+        <transparency>50</transparency>
+        <cut>13</cut>
+    </visual-parameters>
+    <value>2.2</value>
+    <date-of-processing>2016-07</date-of-processing>
+    </semiprecious>
+    <semiprecious  origin="Sri Lanka" name="amethyst" id="gem-6">
+        <visual-parameters>
+            <color>purple</color>
+            <transparency>26</transparency>
+            <cut>5</cut>
+        </visual-parameters>
+        <value>5.7</value>
+        <date-of-processing>2015-01</date-of-processing>
+    </semiprecious>
+
+    <semiprecious name="turquoise" origin="Brazil" id="gem-7">
+        <visual-parameters>
+            <color>red</color>
+            <transparency>73</transparency>
+            <cut>14</cut>
+        </visual-parameters>
+        <value>3.8</value>
+        <date-of-processing>2001-05</date-of-processing>
+    </semiprecious>
+
+    <precious name="spinel" origin="Colombia" id="gem-8">
+        <visual-parameters>
+            <color>pink</color>
+            <transparency>47</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>2.9</value>
+        <date-of-processing>2021-02</date-of-processing>
+    </precious>
+
+    <precious name="sapphire" origin="India" id="gem-9">
+        <visual-parameters>
+            <color>yellow</color>
+            <transparency>27</transparency>
+            <cut>6</cut>
+        </visual-parameters>
+        <value>3.4</value>
+        <date-of-processing>2020-11</date-of-processing>
+    </precious>
+
+    <semiprecious name="beryl" origin="Argentina" id="gem-10">
+        <visual-parameters>
+            <color>green</color>
+            <transparency>50</transparency>
+            <cut>13</cut>
+        </visual-parameters>
+        <value>2.2</value>
+        <date-of-processing>2016-07</date-of-processing>
+    </semiprecious>
+    <semiprecious name="hyacinth" origin="Germany" id="gem-11">
+        <visual-parameters>
+            <color>purple</color>
+            <transparency>26</transparency>
+            <cut>5</cut>
+        </visual-parameters>
+        <value>5.7</value>
+        <date-of-processing>2015-01</date-of-processing>
+    </semiprecious>
+
+    <semiprecious name="tourmaline" origin="Brazil" id="gem-12">
+        <visual-parameters>
+            <color>red</color>
+            <transparency>73</transparency>
+            <cut>14</cut>
+        </visual-parameters>
+        <value>3.8</value>
+        <date-of-processing>2019-05</date-of-processing>
+    </semiprecious>
+
+    <precious name="spinel" origin="Argentina" id="gem-13">
+        <visual-parameters>
+            <color>green</color>
+            <transparency>47</transparency>
+            <cut>8</cut>
+        </visual-parameters>
+        <value>2.9</value>
+        <date-of-processing>2021-02</date-of-processing>
+    </precious>
+
+    <precious name="spinel" origin="India" id="gem-14">
+        <visual-parameters>
+            <color>blue</color>
+            <transparency>27</transparency>
+            <cut>6</cut>
+        </visual-parameters>
+        <value>3.4</value>
+        <date-of-processing>2020-11</date-of-processing>
+    </precious>
+
+    <semiprecious name="peridot" origin="USA" id="gem-15">
+        <visual-parameters>
+            <color>pink</color>
+            <transparency>50</transparency>
+            <cut>13</cut>
+        </visual-parameters>
+        <value>2.2</value>
+        <date-of-processing>2016-07</date-of-processing>
+    </semiprecious>
+
+    <semiprecious name="chrysoberyl" origin="Russia" id="gem-16">
+        <visual-parameters>
+            <color>yellow</color>
+            <transparency>70</transparency>
+            <cut>43</cut>
+        </visual-parameters>
+        <value>1.2</value>
+        <date-of-processing>2016-06</date-of-processing>
+    </semiprecious>
 </gems>

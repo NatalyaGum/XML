@@ -1,8 +1,15 @@
 package by.epam.task3.entity;
 
-public class Semiprecious extends Gem {
+public class Semiprecious extends GemType {
     private String name;
+    private int transparency;
+    private GemColor gemColor;
 
+    public Semiprecious() {
+        transparency = 100;
+        gemColor = GemColor.COLORLESS;
+
+    }
     public String getName() {
         return name;
     }

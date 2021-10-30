@@ -7,7 +7,6 @@ public class VisualParameters {
         private int cut;
 
         public VisualParameters(){
-        transparency = 100;
         color = GemColor.COLORLESS;
         }
 

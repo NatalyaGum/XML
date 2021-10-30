@@ -1,0 +1,2 @@
+2021-10-30 22:39:22 [main] [buildSetGems] [38] ERROR by.epam.task3.builder.SaxBuilder - Error in Sax, check your filename: test_resources/gemsNone.xml
+2021-10-30 22:39:55 [main] [buildSetGems] [38] ERROR by.epam.task3.builder.SaxBuilder - Error in Sax, check your filename: test_resources/gemsNone.xml

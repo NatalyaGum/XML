@@ -2,7 +2,6 @@ package by.epam.task3.builder;
 
 import by.epam.task3.entity.*;
 import by.epam.task3.exception.GemException;
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.w3c.dom.Document;
@@ -23,7 +22,7 @@ public class DomBuilder extends GemBuilder {
     private DocumentBuilder documentBuilder;
 
     @Override
-    public Set<Gem> getGems() {
+    public Set<GemType> getGems() {
         return super.getGems();
     }
 
@@ -33,7 +32,7 @@ public class DomBuilder extends GemBuilder {
         try {
             documentBuilder = factory.newDocumentBuilder();
         } catch (ParserConfigurationException ex) {
-            logger.log(Level.ERROR, "Error in Dom: " + ex.getMessage());
+            logger.error( "Error in Dom: " + ex.getMessage());
         }
     }
 
@@ -56,8 +55,8 @@ public class DomBuilder extends GemBuilder {
                 gems.add(gem);
             }
         } catch (IOException ex) {
-            logger.error( "Error in Dom, check your filename: " + filename);
-            throw new GemException("Error in Dom, check your filename: " + filename);
+            logger.error( "Error in Dom, check your filename: " + filename,ex);
+            throw new GemException("Error in Dom, check your filename: " + filename,ex);
         } catch (SAXException ex) {
             logger.error( "Error in Dom: " + ex.getMessage());
             throw new GemException("Error in Dom: " + ex.getMessage());
@@ -80,8 +79,9 @@ public class DomBuilder extends GemBuilder {
         return precious;
     }
 
-    private void build(Element element, Gem gem) {
-        gem.setOrigin(element.getAttribute("origin"));
+    private void build(Element element, GemType gem) {
+        if (element.getAttribute("origin")!= null){
+        gem.setOrigin(element.getAttribute("origin"));}
         gem.setId(element.getAttribute("id"));
         VisualParameters parameters = gem.getParameters();
         Element parametersElement = (Element) element.getElementsByTagName("visual-parameters").item(0);

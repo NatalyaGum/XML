@@ -1,0 +1,8 @@
+2021-10-30 20:45:01 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-id.2: There are multiple occurrences of ID value 'gem-2'.
+2021-10-30 20:45:01 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-attribute.3: The value 'gem-2' of attribute 'id' on element 'semiprecious' is not valid with respect to its type, 'GemId'.
+2021-10-30 20:45:17 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-id.2: There are multiple occurrences of ID value 'gem-2'.
+2021-10-30 20:45:17 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-attribute.3: The value 'gem-2' of attribute 'id' on element 'semiprecious' is not valid with respect to its type, 'GemId'.
+2021-10-30 20:45:22 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-id.2: There are multiple occurrences of ID value 'gem-2'.
+2021-10-30 20:45:22 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-attribute.3: The value 'gem-2' of attribute 'id' on element 'semiprecious' is not valid with respect to its type, 'GemId'.
+2021-10-30 20:45:54 [main] [fatalError] [22] FATAL by.epam.task3.builder.GemErrorHandler - 17 : 9 - Element type "semiprecious" must be followed by either attribute specifications, ">" or "/>".
+2021-10-30 20:45:54 [main] [validateXML] [37] ERROR by.epam.task3.validator.XmlValidator - File can't validate because: Element type "semiprecious" must be followed by either attribute specifications, ">" or "/>".

@@ -1,0 +1,2 @@
+2021-10-28 22:07:32 [main] [buildSetGems] [45] INFO  by.epam.task3.builder.SaxBuilder - Minerals from sax builder are:
+[Semiprecious{name=garnet, origin=Brazil, id=gem-2, parameters=VisualParameters{color=RED, transparency=73, cut=14}, value=3.8, date=2019-05}, Precious{name=emerald, origin=Colombia, id=gem-3, parameters=VisualParameters{color=GREEN, transparency=47, cut=8}, value=2.9, date=2021-02}, Semiprecious{name=amethyst, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]

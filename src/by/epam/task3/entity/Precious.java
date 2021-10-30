@@ -1,6 +1,6 @@
 package by.epam.task3.entity;
 
-public class Precious extends Gem {
+public class Precious extends GemType {
     private int transparency;
     private GemColor gemColor;
     private Name name;
@@ -8,6 +8,7 @@ public class Precious extends Gem {
     public Precious() {
         transparency = 100;
         gemColor = GemColor.COLORLESS;
+        name=Name.DIAMOND;
     }
 
 

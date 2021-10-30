@@ -1,0 +1,2 @@
+2021-10-30 20:46:19 [main] [fatalError] [22] FATAL by.epam.task3.builder.GemErrorHandler - 17 : 9 - Element type "semiprecious" must be followed by either attribute specifications, ">" or "/>".
+2021-10-30 20:46:19 [main] [validateXML] [37] ERROR by.epam.task3.validator.XmlValidator - File can't validate because: Element type "semiprecious" must be followed by either attribute specifications, ">" or "/>".

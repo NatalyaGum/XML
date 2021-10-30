@@ -45,12 +45,12 @@ public class StaxBuilder extends GemBuilder{
             }
         } catch (XMLStreamException | FileNotFoundException ex) {
             logger.error("Error in Stax: " + ex.getMessage());
-            throw new GemException("Error in Stax: " + ex.getMessage());
+            throw new GemException("Error in Stax: "+ ex.getMessage());
         } catch (IOException ex) {
-            logger.error("Error in Stax, check your filename: " + filename);
-            throw new GemException("Error in Stax, check your filename: " + filename);
+            logger.error("Error in Stax, check your filename: " + filename, ex);
+            throw new GemException("Error in Stax, check your filename: " + filename, ex);
         }
-        logger.info("Minerals from stax builder are:\n" + gems);
+        logger.info("Gems from stax builder are:\n" + gems);
     }
 
     private Precious buildPrecious(XMLStreamReader reader) throws XMLStreamException {
@@ -69,7 +69,7 @@ public class StaxBuilder extends GemBuilder{
     }
 
 
-    private void build(XMLStreamReader reader, Gem gem) throws XMLStreamException {
+    private void build(XMLStreamReader reader, GemType gem) throws XMLStreamException {
         gem.setOrigin(reader.getAttributeValue(null, GemXmlTag.ORIGIN.getTitle()));
         gem.setId(reader.getAttributeValue(null, GemXmlTag.ID.getTitle()));
         String name;

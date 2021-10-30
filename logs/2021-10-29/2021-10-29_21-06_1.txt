@@ -1,0 +1,6 @@
+2021-10-29 21:06:20 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 9 : 27 - cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.example.com/gems":transparency}'. One of '{"http://www.example.com/gems":color}' is expected.
+2021-10-29 21:06:20 [main] [main] [24] INFO  by.epam.task3.main.main - File is good
+2021-10-29 21:06:49 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 6 : 48 - cvc-complex-type.4: Attribute 'name' must appear on element 'semiprecious'.
+2021-10-29 21:06:49 [main] [main] [24] INFO  by.epam.task3.main.main - File is good
+2021-10-29 21:06:49 [main] [buildSetGems] [65] INFO  by.epam.task3.builder.DomBuilder - Gems from dom builder are:
+[Semiprecious{name=garnet, origin=Brazil, id=gem-2, parameters=VisualParameters{color=RED, transparency=73, cut=14}, value=3.8, date=2019-05}, Precious{name=emerald, origin=Colombia, id=gem-3, parameters=VisualParameters{color=GREEN, transparency=47, cut=8}, value=2.9, date=2021-02}, Semiprecious{name=, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]

@@ -1,0 +1,2 @@
+2021-10-29 21:07:59 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 10 : 18 - cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.example.com/gems":cut}'. One of '{"http://www.example.com/gems":transparency}' is expected.
+2021-10-29 21:07:59 [main] [main] [24] INFO  by.epam.task3.main.main - File is good

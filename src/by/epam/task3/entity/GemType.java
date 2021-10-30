@@ -1,7 +1,7 @@
 package by.epam.task3.entity;
 
 import java.time.YearMonth;
-public abstract class Gem {
+public abstract class GemType {
 
     private static final String DEFAULT_VALUE = " ";
 
@@ -11,8 +11,9 @@ public abstract class Gem {
     private double value;
     private YearMonth date;
 
-    public Gem(){
-        origin=DEFAULT_VALUE;
+
+    public GemType(){
+        origin="Russia";
         id=DEFAULT_VALUE;
         date=YearMonth.now();
         parameters = new VisualParameters();
@@ -63,7 +64,7 @@ public abstract class Gem {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Gem gem = (Gem) o;
+        GemType gem = (GemType) o;
         return Double.compare(gem.value, value) == 0 &&
                 origin.equals(gem.origin) &&
                 parameters.equals(gem.parameters) &&

@@ -1,0 +1,2 @@
+2021-10-30 20:26:21 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-id.2: There are multiple occurrences of ID value 'gem-2'.
+2021-10-30 20:26:21 [main] [error] [18] ERROR by.epam.task3.builder.GemErrorHandler - 16 : 65 - cvc-attribute.3: The value 'gem-2' of attribute 'id' on element 'semiprecious' is not valid with respect to its type, 'GemId'.

@@ -1,0 +1,3 @@
+2021-10-29 22:29:50 [main] [main] [24] INFO  by.epam.task3.main.main - File is good
+2021-10-29 22:29:50 [main] [buildSetGems] [65] INFO  by.epam.task3.builder.DomBuilder - Gems from dom builder are:
+[Precious{name=emerald, origin=Colombia, id=gem-3, parameters=VisualParameters{color=GREEN, transparency=47, cut=8}, value=2.9, date=2021-02}, Semiprecious{name=garnet, origin=Brazil, id=gem-2, parameters=VisualParameters{color=RED, transparency=73, cut=14}, value=3.8, date=2019-05}, Semiprecious{name=amethyst, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]

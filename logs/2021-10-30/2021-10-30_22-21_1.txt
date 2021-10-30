@@ -1,0 +1,2 @@
+2021-10-30 22:21:21 [main] [buildSetGems] [53] INFO  by.epam.task3.builder.StaxBuilder - Gems from stax builder are:
+[Semiprecious{name=citrine, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]

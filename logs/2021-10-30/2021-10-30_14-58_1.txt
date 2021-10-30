@@ -1,0 +1,1 @@
+2021-10-30 14:58:21 [main] [main] [23] INFO  by.epam.task3.main.main - File is good

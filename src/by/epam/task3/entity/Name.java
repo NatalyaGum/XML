@@ -6,7 +6,8 @@ public enum Name {
     EMERALD("emerald"),
     RUBY("ruby"),
     SAPPHIRE("sapphire"),
-    CHRYSOBERYL("chrysoberyl");
+    CHRYSOBERYL("chrysoberyl"),
+    SPINEL("spinel");
 
     private String title;
 

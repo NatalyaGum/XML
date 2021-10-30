@@ -1,0 +1,4 @@
+2021-10-30 22:19:13 [main] [buildSetGems] [64] INFO  by.epam.task3.builder.DomBuilder - Gems from dom builder are:
+[Semiprecious{name=citrine, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]
+2021-10-30 22:19:21 [main] [buildSetGems] [45] INFO  by.epam.task3.builder.SaxBuilder - Gems from sax builder are:
+[Semiprecious{name=citrine, origin=Germany, id=gem-1, parameters=VisualParameters{color=PURPLE, transparency=26, cut=5}, value=5.7, date=2015-01}]

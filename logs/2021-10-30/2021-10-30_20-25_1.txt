@@ -1,0 +1,1 @@
+2021-10-30 20:25:36 [main] [validateXML] [41] ERROR by.epam.task3.validator.XmlValidator - File can't validate because: C:\Users\Public\Training Java\Blinou\XML\resources\gemsError.xml (Не удается найти указанный файл)

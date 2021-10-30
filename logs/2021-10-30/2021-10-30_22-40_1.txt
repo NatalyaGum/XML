@@ -1,0 +1,2 @@
+2021-10-30 22:40:22 [main] [buildSetGems] [58] ERROR by.epam.task3.builder.DomBuilder - Error in Dom, check your filename: test_resources/gemsNone.xml
+2021-10-30 22:40:43 [main] [buildSetGems] [58] ERROR by.epam.task3.builder.DomBuilder - Error in Dom, check your filename: test_resources/gemsNone.xml

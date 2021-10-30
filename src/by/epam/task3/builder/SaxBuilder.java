@@ -35,13 +35,13 @@ public class SaxBuilder extends GemBuilder{
         try {
             reader.parse(filename);
         } catch (IOException ex) {
-            logger.error("Error in Sax, check your filename: " + filename);
-            throw new GemException("Error in Sax, check your filename: " + filename);
+            logger.error("Error in Sax, check your filename: " + filename,ex);
+            throw new GemException("Error in Sax, check your filename: " + filename,ex);
         } catch (SAXException ex) {
             logger.error("Error in Sax: " + ex.getMessage());
             throw new GemException("Error in Sax: " + ex.getMessage());
         }
         gems = handler.getGems();
-        logger.info("Minerals from sax builder are:\n" + gems);
+        logger.info("Gems from sax builder are:\n" + gems);
     }
 }

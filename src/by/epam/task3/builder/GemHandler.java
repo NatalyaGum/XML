@@ -1,6 +1,5 @@
 package by.epam.task3.builder;
 
-import by.epam.task3.builder.GemXmlTag;
 import by.epam.task3.entity.*;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
@@ -12,8 +11,8 @@ import java.util.Set;
 
 public class GemHandler extends DefaultHandler {
 
-    private Set<Gem> gems;
-    private Gem current;
+    private Set<GemType> gems;
+    private GemType current;
     private GemXmlTag currentXmlTag;
     private EnumSet<GemXmlTag> withText;
 
@@ -22,7 +21,7 @@ public class GemHandler extends DefaultHandler {
         withText = EnumSet.range(GemXmlTag.COLOR, GemXmlTag.DATE_OF_PROCESSING);
     }
 
-    public Set<Gem> getGems() {
+    public Set<GemType> getGems() {
         return gems;
     }
 
@@ -30,7 +29,7 @@ public class GemHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attrs) {
         if (GemXmlTag.PRECIOUS.getTitle().equals(qName)) {
             current = new Precious();
-            Name name = Name.valueOf(attrs.getValue(0).toUpperCase());
+            Name name = Name.valueOf(attrs.getValue("name").toUpperCase());
             ((Precious) current).setName(name);
             if (attrs.getValue("origin") != null) {
                 current.setOrigin(attrs.getValue("origin"));
@@ -40,7 +39,7 @@ public class GemHandler extends DefaultHandler {
             }
         } else if (GemXmlTag.SEMIPRECIOUS.getTitle().equals(qName)) {
             current = new Semiprecious();
-            ((Semiprecious) current).setName(attrs.getValue(0));
+            ((Semiprecious) current).setName(attrs.getValue("name"));
             if (attrs.getValue("origin") != null) {
                 current.setOrigin(attrs.getValue("origin"));
             }

@@ -1,0 +1,4 @@
+2021-10-30 22:35:03 [main] [buildSetGems] [47] ERROR by.epam.task3.builder.StaxBuilder - Error in Stax: test_resources\gemsNone.xml (Не удается найти указанный файл)
+2021-10-30 22:35:25 [main] [buildSetGems] [47] ERROR by.epam.task3.builder.StaxBuilder - Error in Stax: test_resources\gemsNone.xml (Не удается найти указанный файл)
+2021-10-30 22:35:40 [main] [buildSetGems] [47] ERROR by.epam.task3.builder.StaxBuilder - Error in Stax: test_resources\gemsNone.xml (Не удается найти указанный файл)
+2021-10-30 22:35:53 [main] [buildSetGems] [47] ERROR by.epam.task3.builder.StaxBuilder - Error in Stax: test_resources\gemsNone.xml (Не удается найти указанный файл)
